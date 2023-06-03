@@ -1,3 +1,6 @@
+//To run this program, use the java command, then the name of the class file, along with the max number you want
+//Eg. "java prime 35"
+
 public class prime {
     public static void main(String args[]){
 

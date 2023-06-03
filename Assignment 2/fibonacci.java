@@ -5,7 +5,7 @@ public class fibonacci {
     public static void main(String args[]) {
 
         int n = 0; //Number of fibonacci terms to calculate.
-        int[] result; //Fibonacci terms returned from thread. 
+        long[] result; //Fibonacci terms returned from thread.
 
         Scanner scanner = new Scanner(System.in);
 
@@ -54,19 +54,19 @@ public class fibonacci {
 //child thread. 
 class FibonacciThread extends Thread {
     int n; 
-    int[] fibTerms; 
+    long[] fibTerms; 
 
     public FibonacciThread(int terms) {
         n = terms;
 
     }
 
-    public int[] getTerms() {
+    public long[] getTerms() {
         return fibTerms; 
     }
     
     public void run() {
-        fibTerms = new int[n];
+        fibTerms = new long[n];
 
         if (n == 1) {
             fibTerms[0] = 0;

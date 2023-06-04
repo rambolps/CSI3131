@@ -1,3 +1,6 @@
+//Student 1: Ryan Rambali (300235460)
+//Student 2: Nelson Wang (300174019)
+
 import java.util.Scanner;
 
 //main thread of execution. 

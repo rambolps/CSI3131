@@ -1,3 +1,6 @@
+//Student 1: Ryan Rambali (300235460)
+//Student 2: Nelson Wang (300174019)
+
 //To run this program, use the java command, then the name of the class file, along with the max number you want
 //Eg. "java prime 35"
 

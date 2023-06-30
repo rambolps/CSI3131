@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 #define NUM_CHAIRS 3
-// to compile use: gcc -g -pthread a3test.c -o main
+// to compile use: gcc -g -pthread a3.c -o main
 // To run cd to output then do ./a3 [number of students]
 
 int numStudents = 5;

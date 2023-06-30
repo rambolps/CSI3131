@@ -4,9 +4,9 @@
 #include <semaphore.h>
 #include <unistd.h>
 
-
 #define NUM_CHAIRS 3
-//gcc -g -pthread a3test.c -0 main
+// to compile use: gcc -g -pthread a3test.c -o main
+// To run cd to output then do ./a3 [number of students]
 
 int numStudents = 5;
 

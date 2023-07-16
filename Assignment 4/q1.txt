@@ -1,0 +1,47 @@
+Student 1: Ryan Rambali (300235460)
+Student 2: Nelson Wang (300174019)
+
+a.i.
+    The initial value for the page counters would be 0
+
+a.ii.
+    The counter is increased, when the associated page frame is accessed
+
+a.iii.
+    The counter is decreased when it needs to be swapped out to secondary memory (eg. disk)
+
+a.iv.
+    The paged to be replaced will be the one with the smallest counter value. You can resolve ties using a secondary algorithm, in this case FIFO.
+
+b.
+    Reference String: 1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8, 9, 7, 8, 9, 5, 4, 5, 4, 2
+        Page Frame 0: 1  1  1  1  5  5  5  5  6  6  8  8  8  8  8  8  8  8  8  8  8  8
+        Page Frame 1:    2  2  2  2  2  2  1  1  7  7  7  7  7  7  7  7  7  7  7  7  7
+        Page Frame 2:       3  3  3  3  3  3  3  3  3  3  3  9  9  9  9  9  9  5  5  5
+        Page Frame 3:          4  4  4  4  4  4  4  4  4  4  4  4  4  4  5  4  4  4  4
+
+    Page | Counter
+      1       0
+      2       1
+      3       1
+      4       3
+      5       0
+      6       0
+      7       3
+      8       3
+      9       1
+
+    Page Faults: 10
+
+    Therefore this algorithm gives 10 Page Faults.
+
+c.
+    Reference String: 1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8, 9, 7, 8, 9, 5, 4, 5, 4, 2
+        Page Frame 0: 1  1  1  1  1  1  1  1  6  6  8  8  8  8  8  8  8  8  4  4  4  2
+        Page Frame 1:    2  2  2  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5
+        Page Frame 2:       3  3  3  3  3  3  3  7  7  7  7  7  7  7  7  7  7  7  7  7
+        Page Frame 3:          4  4  4  4  4  4  4  4  4  4  9  9  9  9  9  9  9  9  9
+
+    Page Faults: 7
+
+    Therefore the optimal algorithm gives 7 Page Faults.

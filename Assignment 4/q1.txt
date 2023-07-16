@@ -33,7 +33,7 @@ b.
 
     Page Faults: 10
 
-    Therefore this algorithm gives 10 Page Faults.
+    Therefore this algorithm gives 10 Page Faults (Not including 4 inital page faults as said in module 8 slide 34).
 
 c.
     Reference String: 1, 2, 3, 4, 5, 3, 4, 1, 6, 7, 8, 7, 8, 9, 7, 8, 9, 5, 4, 5, 4, 2
@@ -44,4 +44,4 @@ c.
 
     Page Faults: 7
 
-    Therefore the optimal algorithm gives 7 Page Faults.
+    Therefore the optimal algorithm gives 7 Page Faults (Not including 4 inital page faults as said in module 8 slide 34).

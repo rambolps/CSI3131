@@ -5,7 +5,7 @@ a.i.
     The initial value for the page counters would be 0
 
 a.ii.
-    The counter is increased, when the associated page frame is accessed
+    The counter is increased, when the associated page frame is referenced
 
 a.iii.
     The counter is decreased when it needs to be swapped out to secondary memory (eg. disk)
